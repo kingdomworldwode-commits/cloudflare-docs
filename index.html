@@ -8,6 +8,16 @@
       name="description"
       content="Trailz Uncharted is a travel community sharing hidden routes, weekend escapes, and visual guides for curious explorers."
     />
+    <link rel="canonical" href="https://trailz-uncharted.netlify.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Trailz Uncharted | Travel Stories & Hidden Routes" />
+    <meta
+      property="og:description"
+      content="Travel stories, hidden routes, reels, and trip planning ideas from Trailz Uncharted."
+    />
+    <meta property="og:image" content="https://trailz-uncharted.netlify.app/assets/alaska-road.jpg" />
+    <meta property="og:url" content="https://trailz-uncharted.netlify.app/" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="preconnect" href="https://images.unsplash.com" />
     <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/lucide@latest" defer></script>
@@ -306,7 +316,7 @@
             </p>
           </div>
           <a class="primary-action" href="https://www.instagram.com/trailz_uncharted_/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noreferrer">
-            <i data-lucide="instagram"></i>
+            <i data-lucide="send"></i>
             View travel proof
           </a>
         </div>
@@ -506,11 +516,12 @@
             travel idea around your style.
           </p>
         </div>
-        <form class="booking-form" name="trip-enquiry" method="POST" action="https://formsubmit.co/BILALKARUVA@gmail.com" data-booking-form>
-          <input type="hidden" name="_subject" value="New Trailz Uncharted trip enquiry" />
-          <input type="hidden" name="_next" value="https://trailzuncharted.pages.dev/success/" />
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="text" name="_honey" class="hidden-field" tabindex="-1" autocomplete="off" />
+        <form class="booking-form" name="trip-enquiry" method="POST" action="/success/" data-netlify="true" netlify-honeypot="bot-field" data-booking-form>
+          <input type="hidden" name="form-name" value="trip-enquiry" />
+          <label class="hidden-field">
+            Do not fill this field
+            <input name="bot-field" tabindex="-1" autocomplete="off" />
+          </label>
           <label>
             Your name
             <input name="name" type="text" placeholder="Your name" required />
@@ -568,6 +579,10 @@
             <i data-lucide="send"></i>
             DM on Instagram
           </a>
+          <button class="secondary-action booking-copy" type="button" data-booking-copy>
+            <i data-lucide="copy"></i>
+            Copy DM message
+          </button>
           <p class="booking-note" data-booking-note>
             Tip: copy your trip details from here, then send them in Instagram DM.
           </p>

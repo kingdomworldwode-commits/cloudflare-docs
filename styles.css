@@ -968,6 +968,7 @@ textarea {
 }
 
 .booking-dm,
+.booking-copy,
 .booking-submit,
 .booking-note,
 .booking-message {
@@ -1366,12 +1367,14 @@ textarea {
 
   .support-chat {
     right: 12px;
-    bottom: 86px;
+    bottom: 96px;
   }
 
   .support-launcher {
-    right: 14px;
-    bottom: 14px;
+    right: 12px;
+    bottom: 18px;
+    width: 52px;
+    height: 52px;
   }
 
   .hero {
@@ -1384,20 +1387,10 @@ textarea {
 
   .primary-action,
   .secondary-action {
-    width: 100%; 
+    width: 100%;
   }
 
   .route-card img {
     height: 260px;
   }
-} 
- {"Booking", "Enquiry"}
-<form action="https://formspree.io/f/xwvzkyab" method="POST">
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-  <input type="text" name="destination" placeholder="Destination" required>
-  <input type="number" name="travelers" placeholder="Number of Travelers" required>
-  <input type="text" name="dates" placeholder="Preferred Date(s) or Time">
-  <textarea name="message" placeholder="Extra details" rows="4"></textarea>
-  <button type="submit">Send Booking Enquiry</button>
-</form>
+}
